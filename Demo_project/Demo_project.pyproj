@@ -23,9 +23,11 @@
   <ItemGroup>
     <Compile Include="Demo_project.py" />
     <Compile Include="dev\dev.py" />
+    <Compile Include="prod\prod.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dev\" />
+    <Folder Include="prod\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
