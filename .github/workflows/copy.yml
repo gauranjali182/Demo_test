@@ -6,11 +6,16 @@ on:
       - master
 
 jobs:
-  copy-to-prod:
+  Build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    -name: Set up python
+      uses: actions/checkout@v2
+    -build: Build project
+      run: ./build_script_sh
+  copy_to_prod:
     - name: Create prod directory
       run:  mkdir -p prod
     - name: Copy file to prod
