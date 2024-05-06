@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     -name: Set up python
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     -name: Build project
       run: ./build_script_sh
   copy_to_prod:
