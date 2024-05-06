@@ -18,6 +18,8 @@ jobs:
   copy_to_prod:
     runs-on: ubuntu-latest
     steps:
+      - name: Change directory to Demo_project
+        run:  cd Demo_project
       - name: Create prod directory
         run: mkdir -p prod
       - name: Copy file to prod
